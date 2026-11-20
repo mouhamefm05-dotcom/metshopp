@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boutique en ligne au Sénégal – Wave & Orange Money</title>
+<meta name="description" content="Boutique en ligne au Sénégal : commandez, payez avec Wave ou Orange Money et recevez vos articles à Dakar et dans les régions.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f7;--card:#fff;--ink:#14231f;--mut:#5b6b66;--p:#0b4f4a;--pi:#fff;--a:#ff7a1a;--line:#dde5e2;--ok:#1b7f4b;--wrn:#b45309;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1715;--card:#14231f;--ink:#eef4f2;--mut:#9fb2ac;--p:#2bb3a6;--pi:#06201d;--line:#243833;--wrn:#f5a623;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1715;--card:#14231f;--ink:#eef4f2;--mut:#9fb2ac;--p:#2bb3a6;--pi:#06201d;--line:#243833;--wrn:#f5a623;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Sora,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:30}
+a{color:inherit}button,select,input,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:10px}
+:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+.hd{max-width:1180px;margin:auto;display:flex;align-items:center;gap:12px;padding:10px 16px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:8px;color:var(--p)}.logo img{height:36px}
+.sr{flex:1;min-width:160px;display:flex}.sr input{flex:1;padding:10px 14px;border:1px solid var(--line);border-radius:10px 0 0 10px;background:var(--bg);color:var(--ink)}
+.sr button{background:var(--p);color:var(--pi);padding:0 14px;border-radius:0 10px 10px 0}
+nav{display:flex;gap:4px;flex-wrap:wrap}nav a{text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600;font-size:.92rem}nav a.on,nav a:hover{background:var(--line)}
+.bd{background:var(--a);color:#fff;border-radius:99px;padding:0 7px;font-size:.78rem;margin-left:4px}
+main{max-width:1180px;margin:auto;padding:16px}
+.btn{display:inline-block;background:var(--a);color:#fff;font-weight:700;padding:12px 20px;text-decoration:none;border-radius:10px}.btn.p{background:var(--p);color:var(--pi)}.btn.o{background:none;border:2px solid var(--p);color:var(--p)}.btn.g{background:#1faa59}.btn[disabled]{opacity:.5;cursor:not-allowed}
+.hero{border-radius:22px;padding:clamp(28px,6vw,64px);background:linear-gradient(120deg,var(--p),#0e2f34);color:#fff;margin-bottom:24px}
+.hero h1{font-size:clamp(1.8rem,5vw,3.2rem);line-height:1.1;margin:0 0 12px;max-width:16ch}.hero p{max-width:50ch;opacity:.92;margin:0 0 20px}
+h2{font-size:1.4rem;margin:28px 0 14px}.sub{color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}.cat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;font-weight:700;text-align:center;color:var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.ph{aspect-ratio:1;background:var(--line);display:grid;place-items:center;color:var(--mut);font-size:.85rem;cursor:pointer}.ph img{width:100%;height:100%;object-fit:cover}
+.tag{position:absolute;top:8px;left:8px;background:var(--a);color:#fff;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:99px}
+.cb{padding:10px 12px;flex:1}.pr{font-weight:800;color:var(--p)}.pr s{color:var(--mut);font-weight:400;font-size:.85rem;margin-left:6px}.nm{font-weight:600}.st{font-size:.8rem;color:var(--mut)}
+.ca{display:flex;gap:6px;padding:0 12px 12px}.ca .btn{flex:1;padding:8px;font-size:.9rem;text-align:center;border:0;cursor:pointer}
+.flt{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.flt select,.flt input,.f input,.f select,.f textarea{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);width:auto}
+.f{display:grid;gap:10px}.f input,.f select,.f textarea{width:100%}.f label{font-weight:600;font-size:.9rem}
+.two{display:grid;grid-template-columns:1fr 340px;gap:20px}.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.row{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.row .ph{width:64px;flex:none;border-radius:8px;cursor:default}.row .i{flex:1;min-width:0}
+.q{display:flex;align-items:center;gap:8px}.q button{width:30px;height:30px;background:var(--line);color:var(--ink)}
+.tot{display:flex;justify-content:space-between;padding:4px 0}.tot.b{font-weight:800;font-size:1.15rem;border-top:1px solid var(--line);margin-top:6px;padding-top:10px}
+.pay label{display:flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:8px}.pay input{width:auto}
+.stt{display:inline-block;background:#fdeccf;color:#7a4300;font-weight:700;padding:3px 10px;border-radius:99px;font-size:.85rem}
+.det{display:grid;grid-template-columns:1fr 1fr;gap:24px}.th{display:flex;gap:8px;margin-top:8px}.th img{width:64px;height:64px;object-fit:cover;border-radius:8px;cursor:pointer}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px}summary{font-weight:700;cursor:pointer}
+.empty{text-align:center;padding:36px 12px;color:var(--mut);background:var(--card);border:1px dashed var(--line);border-radius:14px}
+.err{color:#c0262d;font-weight:600}.hp{position:absolute;left:-9999px}
+footer{background:var(--card);border-top:1px solid var(--line);margin-top:36px;padding:28px 16px}.ft{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;font-size:.92rem}.ft a{display:block;padding:2px 0;color:var(--mut);text-decoration:none}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;background:#1faa59;color:#fff;font-weight:700;text-decoration:none;padding:13px 18px;border-radius:99px;box-shadow:0 6px 18px #0005}
+@media(max-width:760px){.two,.det{grid-template-columns:1fr}.hd{gap:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><div class="hd"><a class="logo" href="#accueil" id="lg"></a>
+<form class="sr" onsubmit="return srch(event)"><input id="si" type="search" placeholder="Rechercher un produit" aria-label="Rechercher"><button aria-label="Rechercher">🔍</button></form>
+<nav id="nv"></nav></div></header>
+<main id="app"></main>
+<footer><div class="ft" id="ft"></div></footer>
+<a class="wa" id="wab" target="_blank" rel="noopener">WhatsApp</a>
+<script>
+/* ========= CONFIGURATION (à modifier) ========= */
+const SHOP={nom:"Nom de la boutique",logo:"",wa:"221767645076",waT:"+221 76 764 50 76",wave:"+221 77 448 45 13",om:"+221 77 448 45 13",
+social:{Facebook:"",Instagram:"",TikTok:""},
+/* f:null = « frais à confirmer ». Mettez un montant en FCFA, ex. f:2000 */
+zones:[{n:"Dakar",f:null},{n:"Autres régions",f:null}],retrait:true,adresseRetrait:""};
+/* Modèle produit : {id:1,nom:"",desc:"",prix:0,promo:0,cat:"",stock:0,imgs:["images/photo.jpg"],pop:0,nouveau:false,best:false} */
+const PRODUCTS=[];
+const TEMOIGNAGES=[]; /* {nom:"",texte:""} – uniquement de vrais avis */
+/* ========= FIN CONFIGURATION ========= */
+const $=i=>document.getElementById(i),F=n=>Number(n).toLocaleString("fr-FR")+" FCFA";
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function ld(k,d){try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}}function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+let cart=ld("cart",{}),orders=ld("orders",[]),q="",fc="",fs="pop",fm=0,vid=null,last=null;
+const P=id=>PRODUCTS.find(x=>x.id==id),pr=x=>x.promo&&x.promo<x.prix?x.promo:x.prix,cats=()=>[...new Set(PRODUCTS.map(x=>x.cat).filter(Boolean))];
+const cnt=()=>Object.values(cart).reduce((a,b)=>a+b,0),sub=()=>Object.entries(cart).reduce((s,[i,n])=>s+(P(i)?pr(P(i))*n:0),0);
+const wlink=t=>"https://wa.me/"+SHOP.wa+(t?"?text="+encodeURIComponent(t):"");
+const ph=(x,c)=>`<div class="ph" ${c||""}>${x.imgs&&x.imgs[0]?`<img src="${esc(x.imgs[0])}" alt="${esc(x.nom)}" loading="lazy">`:"Photo à ajouter"}</div>`;
+function card(x){const o=x.stock<=0;return `<div class="card">${x.promo&&x.promo<x.prix?'<span class="tag">Promo</span>':x.nouveau?'<span class="tag">Nouveau</span>':""}${ph(x,`onclick="go('produit',${x.id})"`)}<div class="cb"><div class="pr">${F(pr(x))}${x.promo&&x.promo<x.prix?`<s>${F(x.prix)}</s>`:""}</div><div class="nm">${esc(x.nom)}</div><div class="st">${o?"Épuisé":"En stock"}</div></div><div class="ca"><button class="btn o" onclick="go('produit',${x.id})">Voir</button><button class="btn p" ${o?"disabled":""} onclick="add(${x.id})">Ajouter</button></div></div>`}
+function sect(t,l){return l.length?`<h2>${t}</h2><div class="grid">${l.slice(0,8).map(card).join("")}</div>`:""}
+function go(p,id){if(id!==undefined)vid=id;if(p==="boutique"&&id!==undefined)fc=id;location.hash="#"+p;if(location.hash==="#"+p)route()}
+function srch(e){e.preventDefault();q=$("si").value.trim().toLowerCase();fc="";go("boutique");return false}
+function add(id,n=1,stay){const x=P(id);if(!x)return;const m=Math.min(x.stock,(cart[id]||0)+n);if(m<=0)delete cart[id];else cart[id]=m;sv("cart",cart);upd();if(location.hash==="#panier")route()}
+function upd(){$("bd")&&($("bd").textContent=cnt())}
+const pages={
+accueil(){const c=cats();return `<div class="hero"><h1>${esc(SHOP.nom)}</h1><p>Découvrez nos produits, commandez en ligne et payez facilement avec Wave ou Orange Money. Livraison à Dakar et dans les régions.</p><a class="btn" href="#boutique">Découvrir nos produits</a></div>
+${c.length?`<h2>Catégories</h2><div class="cats">${c.map(x=>`<a class="cat" href="#boutique" onclick="fc='${esc(x).replace(/'/g,"\\'")}'">${esc(x)}</a>`).join("")}</div>`:""}
+${PRODUCTS.length?sect("Produits populaires",[...PRODUCTS].sort((a,b)=>(b.pop||0)-(a.pop||0)))+sect("Nouveautés",PRODUCTS.filter(x=>x.nouveau))+sect("Meilleures ventes",PRODUCTS.filter(x=>x.best))+sect("Promotions",PRODUCTS.filter(x=>x.promo&&x.promo<x.prix)):`<div class="empty" style="margin-top:20px"><b>Le catalogue est en cours de préparation.</b><br>Nos produits arrivent bientôt. Contactez-nous sur WhatsApp pour toute demande.</div>`}
+<h2>Notre boutique</h2><div class="box">Boutique en ligne basée au Sénégal. Vous choisissez vos articles, vous commandez, puis vous payez par Wave ou Orange Money. Votre commande est préparée après vérification du paiement.</div>
+${TEMOIGNAGES.length?`<h2>Avis de nos clients</h2><div class="grid">${TEMOIGNAGES.map(t=>`<div class="box">“${esc(t.texte)}”<br><b>${esc(t.nom)}</b></div>`).join("")}</div>`:""}`},
+boutique(){let l=PRODUCTS.filter(x=>(!fc||x.cat===fc)&&(!q||(x.nom+" "+x.desc+" "+x.cat).toLowerCase().includes(q))&&(!fm||pr(x)<=fm));
+l.sort((a,b)=>fs==="pa"?pr(a)-pr(b):fs==="pd"?pr(b)-pr(a):(b.pop||0)-(a.pop||0));
+return `<h2 style="margin-top:0">Boutique${fc?" · "+esc(fc):""}</h2><div class="flt"><select onchange="fc=this.value;route()" aria-label="Catégorie"><option value="">Toutes les catégories</option>${cats().map(c=>`<option ${c===fc?"selected":""}>${esc(c)}</option>`).join("")}</select>
+<select onchange="fs=this.value;route()" aria-label="Tri"><option value="pop" ${fs==="pop"?"selected":""}>Popularité</option><option value="pa" ${fs==="pa"?"selected":""}>Prix croissant</option><option value="pd" ${fs==="pd"?"selected":""}>Prix décroissant</option></select>
+<input type="number" min="0" placeholder="Prix max (FCFA)" value="${fm||""}" onchange="fm=+this.value||0;route()" aria-label="Prix maximum"></div>
+${l.length?`<div class="grid">${l.map(card).join("")}</div>`:`<div class="empty">Aucun produit trouvé.</div>`}`},
+produit(){const x=P(vid);if(!x)return pages.boutique();return `<div class="det"><div>${ph(x,'style="cursor:default"')}<div class="th">${(x.imgs||[]).map(s=>`<img src="${esc(s)}" alt="" onclick="this.closest('.det').querySelector('.ph').innerHTML='<img src=&quot;${esc(s)}&quot; alt=&quot;&quot;>'">`).join("")}</div></div>
+<div><div class="sub">${esc(x.cat||"")}</div><h1 style="margin:4px 0">${esc(x.nom)}</h1><div class="pr" style="font-size:1.5rem">${F(pr(x))}${x.promo&&x.promo<x.prix?`<s>${F(x.prix)}</s>`:""}</div>
+<p>${esc(x.desc)}</p><p class="st">${x.stock>0?"Disponible : "+x.stock+" en stock":"Produit épuisé"}</p>
+<div class="ca" style="padding:0"><button class="btn p" ${x.stock<=0?"disabled":""} onclick="add(${x.id})">Ajouter au panier</button><button class="btn" ${x.stock<=0?"disabled":""} onclick="add(${x.id});go('commande')">Acheter maintenant</button></div></div></div>`},
+panier(){const ids=Object.keys(cart).filter(P);if(!ids.length)return `<h2 style="margin-top:0">Mon panier</h2><div class="empty">Votre panier est vide.<br><br><a class="btn" href="#boutique">Voir la boutique</a></div>`;
+return `<h2 style="margin-top:0">Mon panier</h2><div class="two"><div class="box">${ids.map(i=>{const x=P(i);return `<div class="row">${ph(x)}<div class="i"><div class="nm">${esc(x.nom)}</div><div class="pr">${F(pr(x))}</div></div><div class="q"><button onclick="add(${i},-1)" aria-label="Moins">−</button><b>${cart[i]}</b><button onclick="add(${i},1)" aria-label="Plus">+</button></div><button onclick="delete cart[${i}];sv('cart',cart);upd();route()" aria-label="Supprimer" style="background:none">🗑️</button></div>`}).join("")}</div>
+<div class="box"><div class="tot"><span>Sous-total</span><b>${F(sub())}</b></div><div class="tot"><span>Livraison</span><span>calculée à la commande</span></div><br><a class="btn" style="display:block;text-align:center" href="#commande">Valider ma commande</a></div></div>`},
+commande(){const ids=Object.keys(cart).filter(P);if(!ids.length)return pages.panier();
+return `<h2 style="margin-top:0">Validation de la commande</h2><div class="two"><form class="f box" onsubmit="return pass(event)" novalidate>
+<label>Nom complet *<input id="nm" required autocomplete="name"></label><label>Téléphone *<input id="tl" type="tel" required autocomplete="tel" placeholder="+221 77 000 00 00"></label>
+<label>Livraison *<select id="zn" onchange="rc()">${SHOP.zones.map((z,i)=>`<option value="${i}">${esc(z.n)}${z.f==null?"":" – "+F(z.f)}</option>`).join("")}${SHOP.retrait?'<option value="r">Retrait sur place</option>':""}</select></label>
+<label>Ville / quartier *<input id="vl" required></label><label>Adresse de livraison *<textarea id="ad" rows="2"></textarea></label>
+<div class="pay"><b>Mode de paiement *</b><label><input type="radio" name="pm" value="Wave" checked> Wave – ${SHOP.wave}</label><label><input type="radio" name="pm" value="Orange Money"> Orange Money – ${SHOP.om}</label></div>
+<label>Référence de transaction (si vous avez déjà payé)<input id="tx"></label><label>Instructions complémentaires<textarea id="ins" rows="2"></textarea></label>
+<input class="hp" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="err" id="er"></div><button class="btn" type="submit">Confirmer la commande</button></form>
+<div class="box" id="rs"></div></div>`},
+confirmation(){const o=last||orders[0];if(!o)return pages.accueil();return `<h2 style="margin-top:0">Commande enregistrée</h2><div class="box"><p>Référence : <b>${o.ref}</b></p><p><span class="stt">${o.statut}</span></p>
+<p>Votre commande ne sera préparée qu’après vérification de votre paiement par la boutique.</p><div class="box" style="background:var(--bg)"><b>Pour payer par ${esc(o.mode)}</b><br>Montant exact : <b>${F(o.total)}</b>${o.liv==null?" (hors frais de livraison à confirmer)":""}<br>Numéro : <b>${o.mode==="Wave"?SHOP.wave:SHOP.om}</b><br>Motif / référence : <b>${o.ref}</b><br>Ensuite, envoyez la capture de votre paiement sur WhatsApp.</div>
+<h3>Récapitulatif</h3>${o.items.map(i=>`<div class="tot"><span>${i.n} × ${esc(i.nom)}</span><span>${F(i.n*i.p)}</span></div>`).join("")}<div class="tot"><span>Livraison</span><span>${o.liv==null?"à confirmer":F(o.liv)}</span></div><div class="tot b"><span>Total</span><span>${F(o.total)}</span></div>
+<p class="sub">${esc(o.client.nom)} · ${esc(o.client.tel)} · ${esc(o.client.zone)}, ${esc(o.client.ville)} ${esc(o.client.adresse)}</p><a class="btn g" target="_blank" rel="noopener" href="${wlink(wmsg(o))}">Envoyer le récapitulatif sur WhatsApp</a></div>`},
+compte(){return `<h2 style="margin-top:0">Mon compte · Mes commandes</h2><div class="box">Les comptes clients avec connexion arriveront avec la base de données. Vous pouvez déjà commander sans compte. Voici les commandes passées depuis cet appareil :</div><br>${orders.length?orders.map(o=>`<div class="box" style="margin-bottom:10px"><b>${o.ref}</b> · ${new Date(o.date).toLocaleDateString("fr-FR")} · ${F(o.total)}<br><span class="stt">${o.statut}</span></div>`).join(""):`<div class="empty">Aucune commande sur cet appareil.</div>`}`},
+apropos(){return `<h2 style="margin-top:0">À propos</h2><div class="box">${esc(SHOP.nom)} est une boutique en ligne au Sénégal. Nous vous permettons de commander simplement et de payer par Wave ou Orange Money. [À compléter : votre histoire, vos valeurs.]</div>`},
+contact(){return `<h2 style="margin-top:0">Contact</h2><div class="box">WhatsApp : <b>${SHOP.waT}</b><br><br><a class="btn g" target="_blank" rel="noopener" href="${wlink()}">Écrire sur WhatsApp</a></div>`},
+faq(){const q=[["Comment commander ?","Ajoutez des produits au panier, validez la commande, puis payez par Wave ou Orange Money."],["Comment payer ?","Envoyez le montant exact au numéro indiqué à la fin de la commande, avec votre référence en motif. Envoyez ensuite la capture sur WhatsApp."],["Quand ma commande est-elle confirmée ?","Après vérification de votre paiement par la boutique. Jusque-là, elle reste « en attente de vérification »."],["Comment suivre ma commande ?","Contactez-nous sur WhatsApp avec votre numéro de référence."]];return `<h2 style="margin-top:0">FAQ</h2>${q.map(a=>`<details><summary>${a[0]}</summary><p>${a[1]}</p></details>`).join("")}`},
+confidentialite(){return `<h2 style="margin-top:0">Politique de confidentialité</h2><div class="box">Nous collectons votre nom, téléphone et adresse uniquement pour traiter votre commande. Ces données ne sont pas vendues. [À compléter : responsable du traitement, durée de conservation, vos droits.]</div>`},
+cgv(){return `<h2 style="margin-top:0">Conditions générales de vente</h2><div class="box">Les prix sont en FCFA. La commande est validée après vérification du paiement. [À compléter : raison sociale, NINEA, adresse, délais, conditions de retour.]</div>`},
+livraison(){return `<h2 style="margin-top:0">Livraison et retours</h2><div class="box">Livraison à Dakar et dans les autres régions, ou retrait sur place${SHOP.adresseRetrait?" : "+esc(SHOP.adresseRetrait):""}. Les frais sont indiqués à la commande. [À compléter : délais et conditions de retour.]</div>`},
+admin(){return `<h2 style="margin-top:0">Connexion administrateur</h2><div class="empty">L’espace administrateur sécurisé nécessite la base de données (étape suivante). Pour l’instant, vous gérez le catalogue dans le fichier de configuration.</div>`}};
+function zf(){const v=$("zn")?.value;return v==="r"?0:SHOP.zones[+v]?.f}
+function rc(){const f=zf(),s=sub();$("rs").innerHTML=`<b>Résumé</b>${Object.keys(cart).filter(P).map(i=>`<div class="tot"><span>${cart[i]} × ${esc(P(i).nom)}</span><span>${F(cart[i]*pr(P(i)))}</span></div>`).join("")}<div class="tot"><span>Sous-total</span><span>${F(s)}</span></div><div class="tot"><span>Livraison</span><span>${f==null?"à confirmer":F(f)}</span></div><div class="tot b"><span>Total</span><span>${F(s+(f||0))}</span></div>`}
+function wmsg(o){return `Bonjour, commande ${o.ref}\n`+o.items.map(i=>`• ${i.n} × ${i.nom} (${F(i.n*i.p)})`).join("\n")+`\nLivraison : ${o.liv==null?"à confirmer":F(o.liv)}\nTotal : ${F(o.total)}\nPaiement : ${o.mode} – en attente de vérification${o.tx?"\nRéf. transaction : "+o.tx:""}\nNom : ${o.client.nom}\nTél : ${o.client.tel}\nLieu : ${o.client.zone}, ${o.client.ville} ${o.client.adresse}${o.ins?"\nNote : "+o.ins:""}`}
+function pass(e){e.preventDefault();const g=i=>$(i).value.trim(),er=m=>{$("er").textContent=m;return false};
+if(g("hp"))return false;const ret=$("zn").value==="r";
+if(g("nm").length<3)return er("Entrez votre nom complet.");if(!/^\+?[\d\s]{9,16}$/.test(g("tl")))return er("Entrez un numéro de téléphone valide.");
+if(!g("vl")||(!ret&&g("ad").length<4))return er("Indiquez la ville/quartier et l’adresse.");
+const ids=Object.keys(cart).filter(P);for(const i of ids)if(cart[i]>P(i).stock)return er("Stock insuffisant pour « "+P(i).nom+" ».");
+const f=zf(),s=sub(),zn=ret?"Retrait sur place":SHOP.zones[+$("zn").value].n;
+const o={ref:"CMD-"+Date.now().toString(36).toUpperCase().slice(-6)+Math.random().toString(36).slice(2,4).toUpperCase(),date:Date.now(),statut:"En attente de vérification du paiement",
+items:ids.map(i=>({n:cart[i],nom:P(i).nom,p:pr(P(i))})),sub:s,liv:f==null?null:f,total:s+(f||0),mode:document.querySelector("[name=pm]:checked").value,tx:g("tx"),ins:g("ins"),client:{nom:g("nm"),tel:g("tl"),zone:zn,ville:g("vl"),adresse:g("ad")}};
+orders.unshift(o);sv("orders",orders);last=o;cart={};sv("cart",cart);upd();go("confirmation");return false}
+function route(){const h=(location.hash||"#accueil").slice(1),p=pages[h]?h:"accueil";
+$("app").innerHTML=pages[p]();if(p==="commande")rc();
+$("nv").innerHTML=[["accueil","Accueil"],["boutique","Boutique"],["compte","Mon compte"],["contact","Contact"],["panier","🛒<span class=bd id=bd>0</span>"]].map(a=>`<a href="#${a[0]}" class="${a[0]===p?"on":""}">${a[1]}</a>`).join("");upd();window.scrollTo(0,0)}
+$("lg").innerHTML=(SHOP.logo?`<img src="${esc(SHOP.logo)}" alt="">`:"🛍️")+esc(SHOP.nom);$("wab").href=wlink();
+$("ft").innerHTML=`<div><b>${esc(SHOP.nom)}</b><br>Paiement Wave : ${SHOP.wave}<br>Paiement Orange Money : ${SHOP.om}<br>WhatsApp : ${SHOP.waT}</div><div><b>Informations</b><a href="#apropos">À propos</a><a href="#faq">FAQ</a><a href="#livraison">Livraison et retours</a><a href="#cgv">Conditions générales de vente</a><a href="#confidentialite">Confidentialité</a><a href="#admin">Administration</a></div>${Object.entries(SHOP.social).some(s=>s[1])?`<div><b>Réseaux sociaux</b>${Object.entries(SHOP.social).filter(s=>s[1]).map(s=>`<a href="${esc(s[1])}" target="_blank" rel="noopener">${s[0]}</a>`).join("")}</div>`:""}`;
+window.addEventListener("hashchange",route);route();
+</script></body></html>
