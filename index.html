@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Boutique en ligne au Sénégal – Wave & Orange Money</title>
+<title>SHOPP – Boutique en ligne au Sénégal</title>
 <meta name="description" content="Boutique en ligne au Sénégal : commandez, payez avec Wave ou Orange Money et recevez vos articles à Dakar et dans les régions.">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
@@ -57,7 +57,7 @@ footer{background:var(--card);border-top:1px solid var(--line);margin-top:36px;p
 <a class="wa" id="wab" target="_blank" rel="noopener">WhatsApp</a>
 <script>
 /* ========= CONFIGURATION (à modifier) ========= */
-const SHOP={nom:"Nom de la boutique",logo:"",wa:"221767645076",waT:"+221 76 764 50 76",wave:"+221 77 448 45 13",om:"+221 77 448 45 13",
+const SHOP={nom:"SHOPP",logo:"",wa:"221767645076",waT:"+221 76 764 50 76",wave:"+221 77 448 45 13",om:"+221 77 448 45 13",
 social:{Facebook:"",Instagram:"",TikTok:""},
 /* f:null = « frais à confirmer ». Mettez un montant en FCFA, ex. f:2000 */
 zones:[{n:"Dakar",f:null},{n:"Autres régions",f:null}],retrait:true,adresseRetrait:""};
@@ -79,11 +79,12 @@ function go(p,id){if(id!==undefined)vid=id;if(p==="boutique"&&id!==undefined)fc=
 function srch(e){e.preventDefault();q=$("si").value.trim().toLowerCase();fc="";go("boutique");return false}
 function add(id,n=1,stay){const x=P(id);if(!x)return;const m=Math.min(x.stock,(cart[id]||0)+n);if(m<=0)delete cart[id];else cart[id]=m;sv("cart",cart);upd();if(location.hash==="#panier")route()}
 function upd(){$("bd")&&($("bd").textContent=cnt())}
+function tous(){const n=Math.max(120,PRODUCTS.length),r=PRODUCTS.map(card);for(let i=PRODUCTS.length;i<n;i++)r.push(`<div class="card"><div class="ph" style="cursor:default">Photo à ajouter</div><div class="cb"><div class="pr">Prix à confirmer</div><div class="nm">Article n° ${i+1}</div><div class="st">Bientôt disponible</div></div><div class="ca"><button class="btn o" disabled>Bientôt</button></div></div>`);return `<h2>Tous nos articles (${n})</h2><div class="grid">${r.join("")}</div>`}
 const pages={
 accueil(){const c=cats();return `<div class="hero"><h1>${esc(SHOP.nom)}</h1><p>Découvrez nos produits, commandez en ligne et payez facilement avec Wave ou Orange Money. Livraison à Dakar et dans les régions.</p><a class="btn" href="#boutique">Découvrir nos produits</a></div>
 ${c.length?`<h2>Catégories</h2><div class="cats">${c.map(x=>`<a class="cat" href="#boutique" onclick="fc='${esc(x).replace(/'/g,"\\'")}'">${esc(x)}</a>`).join("")}</div>`:""}
 ${PRODUCTS.length?sect("Produits populaires",[...PRODUCTS].sort((a,b)=>(b.pop||0)-(a.pop||0)))+sect("Nouveautés",PRODUCTS.filter(x=>x.nouveau))+sect("Meilleures ventes",PRODUCTS.filter(x=>x.best))+sect("Promotions",PRODUCTS.filter(x=>x.promo&&x.promo<x.prix)):`<div class="empty" style="margin-top:20px"><b>Le catalogue est en cours de préparation.</b><br>Nos produits arrivent bientôt. Contactez-nous sur WhatsApp pour toute demande.</div>`}
-<h2>Notre boutique</h2><div class="box">Boutique en ligne basée au Sénégal. Vous choisissez vos articles, vous commandez, puis vous payez par Wave ou Orange Money. Votre commande est préparée après vérification du paiement.</div>
+${tous()}<h2>Notre boutique</h2><div class="box">Boutique en ligne basée au Sénégal. Vous choisissez vos articles, vous commandez, puis vous payez par Wave ou Orange Money. Votre commande est préparée après vérification du paiement.</div>
 ${TEMOIGNAGES.length?`<h2>Avis de nos clients</h2><div class="grid">${TEMOIGNAGES.map(t=>`<div class="box">“${esc(t.texte)}”<br><b>${esc(t.nom)}</b></div>`).join("")}</div>`:""}`},
 boutique(){let l=PRODUCTS.filter(x=>(!fc||x.cat===fc)&&(!q||(x.nom+" "+x.desc+" "+x.cat).toLowerCase().includes(q))&&(!fm||pr(x)<=fm));
 l.sort((a,b)=>fs==="pa"?pr(a)-pr(b):fs==="pd"?pr(b)-pr(a):(b.pop||0)-(a.pop||0));
